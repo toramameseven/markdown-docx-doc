@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://toramameseven.github.io',
-	base: '/my-repo',
+	base: '/markdown-docx-doc',
 	trailingSlash: "always",
 	integrations: [
 		starlight({
