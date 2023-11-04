@@ -39,7 +39,7 @@ export default defineConfig({
 						ja: 'ここからはじめる',
 					},
 					autogenerate: { directory: 'start' },
-				},
+				}
 				// {
 				// 	label: 'Guide',
 				// 	translations: {
