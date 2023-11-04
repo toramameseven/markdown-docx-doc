@@ -1,0 +1,38 @@
+---
+title: Markdown Docx
+description: Convert markdown to docx with vscode
+template: splash
+# banner:
+#   content: |
+#     <span class="ph-banner">
+#       <span class="ph-houston"><img src="/ph-houston.svg" alt="" width="72" height="72"/></span>
+#       <span class="ph-text">
+#         <strong>ようこそ Product Hunters&nbsp;👋</strong>
+#         <a href="https://www.producthunt.com/posts/starlight-by-astro">ただいまライブ中!</a>
+#       </span>
+#     </span>
+hero:
+  title: Markdown Docx
+  tagline: Convert markdown to docx with vscode
+  # image:
+  #   file: ../../../assets/markdown2docx.png
+  # actions:
+  #   - text: はじめる
+  #     icon: right-arrow
+  #     variant: primary
+  #     link: start/setup/
+  #   - text: GitHubで見る
+  #     icon: external
+  #     link: https://github.com/toramameseven/markdown-docx
+---
+
+import { CardGrid, Card, LinkCard } from "@astrojs/starlight/components";
+import AboutAstro from "../../../components/about-astro.astro";
+
+<CardGrid stagger>
+  <LinkCard
+    title="Install"
+    description="Install markdown-docx extension"
+    href="start/setup/"
+  />
+</CardGrid>
