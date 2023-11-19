@@ -39,14 +39,21 @@ export default defineConfig({
 						ja: 'ここからはじめる',
 					},
 					autogenerate: { directory: 'start' },
+				},
+				{
+					label: 'Basic',
+					translations: {
+						ja: '基本',
+					},
+					autogenerate: { directory: 'basic' },
+				},
+				{
+					label: 'Demo',
+					translations: {
+						ja: 'デモ',
+					},
+					autogenerate: { directory: 'demos' },
 				}
-				// {
-				// 	label: 'Guide',
-				// 	translations: {
-				// 		ja: 'ガイド',
-				// 	},
-				// 	autogenerate: { directory: 'guide' },
-				// },
 			],
 			lastUpdated: true,
 		}),
