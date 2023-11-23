@@ -4,10 +4,10 @@ import Default from '@astrojs/starlight/components/Head.astro';
 ---
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1TQ51F6M82"></script>
-<script>
+<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-1TQ51F6M82"></script>
+<script type="text/partytown">
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){window.dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-1TQ51F6M82');
