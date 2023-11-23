@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import partytown from '@astrojs/partytown';
 
 export const locales = {
 	en: { label: 'English', lang: 'en' },
@@ -23,12 +24,22 @@ export default defineConfig({
 	site,
 	base: '/markdown-docx-doc',
 	integrations: [
+		partytown({
+			// Adds dataLayer.push as a forwarding-event.
+			config: {
+				forward: ["dataLayer.push"],
+			},
+		}),
 		starlight({
 			title: 'markdown-docx',
 			favicon: "./images/markdown2docx.png",
 			customCss: process.env.NO_GRADIENTS ? [] : ['./src/assets/landing.css'],
 			locales,
 			defaultLocale: "ja",
+			components: {
+				// Override the default `SocialIcons` component.
+				Head: './src/components/MyHead.astro',
+			},
 			social: {
 				github: 'https://github.com/toramameseven/markdown-docx',
 			},
@@ -55,7 +66,7 @@ export default defineConfig({
 					autogenerate: { directory: 'demos' },
 				}
 			],
-			lastUpdated: true,
+			// lastUpdated: true,
 		}),
 	],
 });
