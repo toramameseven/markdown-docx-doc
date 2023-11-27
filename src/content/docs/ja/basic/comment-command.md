@@ -71,11 +71,11 @@ markdown-docxは、コメント内にコマンドを入力します。
 
 例
 
-\<!-- word tableParam useCheckBox "" -->
+\<!-- word param useCheckBox "" -->
 
 何もしません。
 
-\<!-- word tableParam useCheckBox ON -->
+\<!-- word param useCheckBox ON -->
 
 ☑と☐ をフィールドコードに変換します。
 
@@ -157,4 +157,12 @@ markdown-docxは、コメント内にコマンドを入力します。
 
 ### imageWidth
 
+
+\<!-- word param imageWidth `width`-->
+
+`width`:  イメージの最大幅を指定します。A4サイズのばあい、５００くらいがページ幅になります。
+
+例
+
+\<!-- word param imageWidth 500-->
 

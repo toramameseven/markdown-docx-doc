@@ -71,11 +71,11 @@ It can not be used.
 
 example
 
-\<!-- word tableParam useCheckBox "" -->
+\<!-- word param useCheckBox "" -->
 
 I won't do anything.
 
-\<!-- word tableParam useCheckBox ON -->
+\<!-- word param useCheckBox ON -->
 
 Convert ☑ and ☐ to field codes.
 
@@ -157,4 +157,12 @@ It can not be used.
 
 ### imageWidth
 
+
+\<!-- word param imageWidth `width`-->
+
+`width`: Specify the maximum width of the image. For A4 size, the page width is about 500.
+
+example
+
+\<!-- word param imageWidth 500-->
 

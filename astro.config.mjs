@@ -59,6 +59,13 @@ export default defineConfig({
 					autogenerate: { directory: 'basic' },
 				},
 				{
+					label: 'Settings',
+					translations: {
+						ja: '設定',
+					},
+					autogenerate: { directory: 'settings' },
+				},
+				{
 					label: 'Demo',
 					translations: {
 						ja: 'デモ',
